@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #F2F4F8;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.hero {
+  margin: 200px;
+  padding: 0 20px 30px 20px;
+  width: 350px;
+  border: 19px solid #000000;
+  background: linear-gradient(30deg, #fff 66%, #00d2ff 40%, #00efff 0%, #005aff 100%);
+  border-radius: 55px;
+}
+
+.span {
+  display: flex;
+  width: 140px;
+  padding: 10px 0;
+  margin: 0 auto 15px;
+  border-radius: 0px 0px 30px 30px;
+  background-color: #000000;
+}
+
+.hero__title {
+  display: block;
+  margin-left: 90px;
+  color: #FFFFFF;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.intro__left {
+  margin-right: 20px;
+}
+
+.intro__middle {
+  width: 300px;
+  margin-right: 40px;
+}
+
+.input__span-first {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #696969;
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+
+.input:checked ~ .input__span-first {
+  background-color: #5288F4;
+  border: none;
+}
+
+.input__span-second {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 24px);
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  background-color: #FFFFFF;
+  border: 1px solid #696969;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.input:checked ~  .input__span-first > .input__span-second {
+  left: calc(50% - 3px);
+  background-color: #fff;
+  border: none;
+}

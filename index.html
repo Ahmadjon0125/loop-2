@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <title>loop</title>
+</head>
+<body>
+  <div class="hero">
+    <span class="span"></span>
+    <h1 class="hero__title">CARD</h1>
+    <img class="hero__card" src="./img/card.png" width="280" height="180" alt="plastic card">
+    <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <div class="intro">
+        <div class="intro__left">
+          <img class="intro__img" src="./img/lock.svg" width="18" height="18" alt="lock" >
+        </div>
+        <div class="intro__middle">
+          <h2 class="intro__title">Lock card</h2>
+          <p class="intro__text">You can unlock it later</p>
+        </div>  
+        <label class="label">
+          <input class="input visually-hidden" type="checkbox" name="phone_type" value="Lock card">
+          <span class="input__span-first">
+            <span class="input__span-second"></span>
+          </span>
+        </label>
+      </div>
+      <div class="intro">
+        <div class="intro__left">
+          <img class="intro__img" src="./img/plane.svg" width="18" height="18" alt="lock" >
+        </div>
+        <div class="intro__middle">
+          <h2 class="intro__title">Payments abroad</h2>
+          <p class="intro__text">Enable your card abroad</p>
+        </div>
+        <label class="label">
+          <input class="input visually-hidden" type="checkbox" name="phone_type" value="Payments abroad">
+          <span class="input__span-first">
+            <span class="input__span-second"></span>
+          </span>
+        </label>
+      </div>
+      <div class="intro">
+        <div class="intro__left">
+          <img class="intro__img" src="./img/laptop.svg" width="18" height="18" alt="lock" >
+        </div>
+        <div class="intro__middle">
+          <h2 class="intro__title">Online payments</h2>
+          <p class="intro__text">Enable online transactions</p>
+        </div>
+        <label class="label">
+          <input class="input visually-hidden" type="checkbox" name="phone_type" value="Online payments">
+          <span class="input__span-first">
+            <span class="input__span-second"></span>
+          </span>
+        </label>
+      </div>
+      <div class="intro">
+        <div class="intro__left">
+          <img class="intro__img" src="./img/atm.svg" width="18" height="18" alt="lock" >
+        </div>
+        <div class="intro__middle">
+          <h2 class="intro__title">ATM withdrawals</h2>
+          <p class="intro__text">Enable ATM withdrawals</p>
+        </div>
+        <label class="label">
+          <input class="input visually-hidden" type="checkbox" name="phone_type" value="ATM withdrawals">
+          <span class="input__span-first">
+            <span class="input__span-second"></span>
+          </span>
+        </label>
+        <button type="submit" class="visually-hidden"></button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
